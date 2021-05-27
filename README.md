@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The proposed algorithm uses Berkeley wavelet transform, Channel information, Simple thresholding, and Morphological operations for both automated skull stripping and tumor segmentation from brain MRI. It is not an iterative algorithm, It doesn’t require a user to initialize any values.It is Computationally efficient with a minimized processing time of about less than one second to run the algorithm and perform skull stripping and tumor segmentation. It is a Fully automated method for skull stripping and tumor segmentation.
+The proposed algorithm uses Berkeley wavelet transform, Channel information, Simple thresholding, and Morphological operations for both automated skull stripping and tumor segmentation from brain MRI. It is not an iterative algorithm, It doesn’t require a user to initialize any values.It is Computationally efficient with a minimized processing time of about less than one second to run the algorithm and perform skull stripping and tumor segmentation. It is a Fully automated method for skull stripping and tumor segmentation. Below is the flow of the algorithm.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/119772110-4e429100-bedc-11eb-8f0f-c9499d2a3a8f.png" width="700">             
