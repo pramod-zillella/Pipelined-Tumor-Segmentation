@@ -1,11 +1,23 @@
 # Pipelined-Tumor-Segmentation
 
+
+## Introduction
+
+The proposed algorithm uses Berkeley wavelet transform, Channel information, Simple thresholding, and Morphological operations for both automated skull stripping and tumor segmentation from brain MRI. It is not an iterative algorithm, It doesn’t require a user to initialize any values.It is Computationally efficient with a minimized processing time of about less than one second to run the algorithm and perform skull stripping and tumor segmentation. It is a Fully automated method for skull stripping and tumor segmentation.
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/63542593/119772110-4e429100-bedc-11eb-8f0f-c9499d2a3a8f.png" width="700">             
 </p>
 
+## Methodology
 
+1) Berkeley Wavelet transform is applied on the brain MRI to generate a BWT Feature map. The unique advantage of using BWT is that it clearly delineates the different brain MRI regions and highlights the transitions. This can be evidenced by the color channel decomposition of the generated feature map into R G B Channels. R channel contains the skull region, G channel containing the enhanced MRI image used for skull stripping, and B channel is not used in this study.
 
+2) The obtained R channel is binarized using a simple thresholding operation (threshold= 60). It Is enhanced using Morphological imerode, bwpack, and imdilate functions and Mapped onto the G channel to obtain the Skull stripped image. (Reason for the threshold at 60 is it included all the skull region).
+
+3) Enhanced Brain region is obtained after the skull stripping operation and thresholding operation with a threshold at 180 ( worked well with all the samples) generated segmented region and Morphological operations of bwareafilt, imdilate, are used for tumor segmentation from the brain region. The boundary of the tumor can be obtained using Morphological bwboundaries operation. The proposed algorithm is unique as it uses decomposed BWT feature Map Channel information along with simple thresholding for automated skull stripping and tumor segmentation and boundary detection to achieve legitimate results.
+
+## Segmentation Results
 
 | Test Images  | Jaccard Similarity Index | Sensitivity | Specificity | Dice Coefficient | Accuracy | Processing Time(Sec) | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
@@ -19,3 +31,14 @@
 | Image-8  | 0.93059791 | 0.98109899  | 0.998419706  | 0.964051505  | 0.9979296 | 0.758  | 
 | Image-9  | 0.8800759   | 0.92078618  | 0.999348603  | 0.936213161  | 0.9982577  | 0.756  | 
 | Average  |0.87828152  | 0.92627201  | 0.999113404  | 0.934751064  | 0.9980003  | 0.873sec  | 
+
+
+
+
+
+
+
+
+
+
+
