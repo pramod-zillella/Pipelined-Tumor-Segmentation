@@ -38,7 +38,7 @@ The proposed algorithm uses Berkeley wavelet transform, Channel information, Sim
 ![2'-12_Tumor_Segmentation](https://user-images.githubusercontent.com/63542593/119775854-d0818400-bee1-11eb-9662-033d3159c597.png)
 
 ## Conclusion:
-The proposed method is the good in processing complexity, with less than 1 second for skull stripping and tumor segmentation. Deep learning based models are the state-of-the-art methods with high computational complexity and take several minutes for tumor segmentation alone.
+The proposed method is the good interms of processing complexity, with less than 1 second for skull stripping and tumor segmentation. Deep learning based models are the state-of-the-art methods with high computational complexity and take several minutes for tumor segmentation alone.
 
 
 
