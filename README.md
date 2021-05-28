@@ -32,9 +32,9 @@ The proposed algorithm uses Berkeley wavelet transform, Channel information, Sim
 | Image-9  | 0.8800759   | 0.92078618  | 0.999348603  | 0.936213161  | 0.9982577  | 0.756  | 
 | Average  |0.87828152  | 0.92627201  | 0.999113404  | 0.934751064  | 0.9980003  | 0.873sec  | 
 
-### Skull Stripping
+#### Skull Stripping
 ![2'-12_BWT](https://user-images.githubusercontent.com/63542593/119775862-d24b4780-bee1-11eb-89bd-900bb75ef07b.png)
-### Tumor Segmentation:
+#### Tumor Segmentation:
 ![2'-12_Tumor_Segmentation](https://user-images.githubusercontent.com/63542593/119775854-d0818400-bee1-11eb-9662-033d3159c597.png)
 
 ## Conclusion
