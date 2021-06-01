@@ -1,4 +1,4 @@
-# Pipelined-Tumor-Segmentation
+# Pipelined-Tumor-Detection-Segmentation
 
 
 ## Introduction
